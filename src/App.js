@@ -6,9 +6,10 @@ function App() {
   const [familiar, setFamiliar] = useState(false);
   return (
     <div className="App">
+      <h1>User</h1>
       <h2>Is Familiar: {familiar.toString()}</h2>
-      <button onClick={()=>setFamiliar(!familiar)}>Toggle Friend</button>
-      <User familiar = {familiar}></User>
+      <button onClick={() => setFamiliar(!familiar)}>Toggle Friend</button>
+      <User familiar={familiar}></User>
     </div>
   );
 }
